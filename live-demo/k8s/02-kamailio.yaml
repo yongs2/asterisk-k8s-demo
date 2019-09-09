@@ -40,7 +40,7 @@ spec:
         - name: config
       containers:
         - name: kamailio
-          image: cycoresystems/kamailio
+          image: yongs2/kamailio
           env:
             - name: CLOUD
               value: gcp
