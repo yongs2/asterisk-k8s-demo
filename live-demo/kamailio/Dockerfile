@@ -2,10 +2,10 @@ FROM debian:stretch
 MAINTAINER Seán C McCord "scm@cycoresys.com"
 
 RUN apt-get update && \
-    apt-get install -y curl procps gnupg2 && \
+    apt-get install -y curl procps gnupg2 apt-utils libxml2 && \
     apt-get clean
 
-# Install kamailio
+# Install kamailio (Refer http://deb.kamailio.org/)
 RUN curl -qO http://deb.kamailio.org/kamailiodebkey.gpg && \
     apt-key add kamailiodebkey.gpg && \
     echo "deb http://deb.kamailio.org/kamailio51 stretch main\ndeb-src http://deb.kamailio.org/kamailio50 stretch main" > /etc/apt/sources.list.d/kamailio.list
