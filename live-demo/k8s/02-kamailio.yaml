@@ -40,17 +40,17 @@ spec:
         - name: config
       containers:
         - name: kamailio
-          image: yongs2/kamailio
+          image: yongs2/kamailio:1.0.0
           env:
-            - name: CLOUD
+            - name: CLOUD_NONE
               value: gcp
           volumeMounts:
             - name: config
               mountPath: /data/kamailio
         - name: rtpproxy
-          image: cycoresystems/rtpproxy
+          image: yongs2/rtpproxy:1.0.0
           env:
-            - name: CLOUD
+            - name: CLOUD_NONE
               value: gcp
         - name: dispatchers
           image: cycoresystems/dispatchers
