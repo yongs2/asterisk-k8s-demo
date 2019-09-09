@@ -29,4 +29,4 @@ stop:
 
 .PHONY: logs
 logs:
-	docker logs -f ${IMG_NAME} ||
+	docker logs -f ${IMG_NAME} || :
