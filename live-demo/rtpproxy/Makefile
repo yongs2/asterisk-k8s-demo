@@ -2,7 +2,7 @@
 
 REGISTRY_URL := docker.io/yongs2
 IMG_NAME := rtpproxy
-IMG_TAG := 1.0.0
+IMG_TAG := 1.0.1
 
 .PHONY: build
 build:
