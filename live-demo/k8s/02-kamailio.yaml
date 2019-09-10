@@ -33,8 +33,6 @@ spec:
       labels:
         component: kamailio
     spec:
-      nodeSelector:
-        cloud.google.com/gke-nodepool: kamailio
       hostNetwork: true
       volumes:
         - name: config
