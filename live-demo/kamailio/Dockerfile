@@ -12,7 +12,7 @@ RUN curl -qO http://deb.kamailio.org/kamailiodebkey.gpg && \
 RUN apt-get update &&  apt-get install -y kamailio kamailio-json-modules kamailio-utils-modules kamailio-extra-modules kamailio-nth && apt-get clean
 
 # Download netdiscover
-RUN curl -qL -o /usr/bin/netdiscover https://github.com/yongs2/netdiscover/releases/download/v1.2.7/netdiscover.linux.amd64
+RUN curl -qL -o /usr/bin/netdiscover https://github.com/yongs2/netdiscover/releases/download/v1.2.8/netdiscover.linux.amd64
 RUN chmod +x /usr/bin/netdiscover
 
 # Install config and templates
