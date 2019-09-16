@@ -67,6 +67,6 @@ spec:
             - name: ARI_APPLICATION
               value: demo
             - name: ARI_USERNAME
-              value: admin
+              value: k8s-asterisk-config
             - name: ARI_PASSWORD
-              value: admin
+              value: k8s-autosecret

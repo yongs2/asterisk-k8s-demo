@@ -5,7 +5,9 @@ exten = demo,1,Verbose(1, "New call")
 
 exten = echo,1,Verbose(1, "Echo test")
  same = n,Answer
+ same = n,Playback(demo-echotest)
  same = n,Echo()
+ same = n,Playback(demo-echodone)
  same = n,Hangup()
 
 exten = voicedemo,1,Verbose(1, "New Voice Demo call")
@@ -21,3 +23,4 @@ exten = audiosocket,1,Verbose(1, "Audiosocket Leg")
 
 exten = 18882400309,1,Goto(demo,1)
 exten = 16786084209,1,Goto(voicedemo,1)
+exten = 15558885555,1,Goto(echo,1)

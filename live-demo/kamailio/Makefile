@@ -2,7 +2,7 @@
 
 REGISTRY_URL := docker.io/yongs2
 IMG_NAME := kamailio
-IMG_TAG := 1.0.1
+IMG_TAG := 1.0.2
 
 .PHONY: build
 build:

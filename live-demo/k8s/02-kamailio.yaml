@@ -38,7 +38,7 @@ spec:
         - name: config
       containers:
         - name: kamailio
-          image: yongs2/kamailio:1.0.1
+          image: yongs2/kamailio:1.0.2
           env:
             - name: CLOUD
               value: private
